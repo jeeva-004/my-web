@@ -1,0 +1,217 @@
+:root{
+    --yellow:#eeec1e;
+    --green:#57df0b;
+    --orangered:#df470b;
+    --whitesmoke:#f1eeec;
+    --black:rgba(54, 51, 51, 1);
+}
+
+body{
+    margin:0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background:linear-gradient(to right, rgb(63, 62, 62), rgb(119, 117, 117));
+
+    /* background-color: var(--black); */
+}
+
+.landing{
+    background-image: url(img/img.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color:whitesmoke;
+}
+
+header{
+    display: flex;
+    padding: 1.2em;
+    flex-wrap:wrap;
+    row-gap: 1.2em;
+    column-gap: 1em;
+
+}
+
+#logo{
+    flex:3;
+    font-size: 2em;
+    min-width: 260px;
+}
+
+.landing i{
+    margin-right: .5em;
+}
+
+nav{
+    display: flex;
+    flex:2;
+    align-items: center;
+    font-size: 1.3em;
+}
+
+nav a{
+    flex:1;
+    min-width: 120px;
+}
+
+nav a:hover{
+    color:var(--green);
+    font-size: 1.3em;
+    transition: 0.3s;
+}
+    
+header a{
+    text-decoration: none;
+    color:var(--green);
+}
+
+
+.maintext{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    padding:4em 0em 0em 8em;
+}
+
+.tagline1{
+    color:var(--whitesmoke);
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.tagline2{
+    color:var(--yellow);
+    font-size: 2em;
+    font-weight: 10px;
+
+}
+.callus{
+    padding-bottom:10px;
+    color:whitesmoke;
+    font-weight: bold;
+    font-size: 1.2em;
+    row-gap: 10px;
+
+}
+
+
+
+.maintext button{
+    width:8em;
+    margin-top:1em;
+    margin-bottom: 2em;
+    padding: .5em;
+    border:var(--green);
+    border-radius: 8px;
+    color:var(--whitesmoke);
+    background-color: var(--green);
+    font-size: .9em;
+    font-weight: bold;
+}
+.chats{
+    margin-top:0%;
+}
+button:hover{
+    font-size: 1.2em;
+    transition: 0.2s;
+}
+
+#logo:first-letter{
+    font-size: 2.5em;
+}
+
+.menu{
+    margin-top: 60px;
+    display: grid;
+    background:linear-gradient(to right, rgb(63, 62, 62), rgb(119, 117, 117));
+    color:var(--whitesmoke);
+    grid-template-columns: repeat(auto-fit,minmax(320px, 1fr));
+}
+
+ #loc{
+    margin-top:50px;
+    background:linear-gradient(to right, rgb(63, 62, 62), rgb(119, 117, 117));
+    color:var(--orangered);
+    font-size:2.5em;
+    display: flex;
+    justify-content: center;
+
+}
+
+#menuheading{
+    text-align: center;
+    background:linear-gradient(to right, rgb(63, 62, 62), rgb(119, 117, 117));
+    color:var(--orangered);
+    font-size:2.5em;
+}
+
+
+.locations{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.locations div{
+    flex:1;
+    min-width: 220px;
+    padding:1em;
+}
+.locations{
+    background:linear-gradient(to right, rgb(63, 62, 62), rgb(119, 117, 117));
+    color: var(--whitesmoke);
+}
+
+table{
+    width:100%;
+    padding:15px;
+}
+
+th, .locations h2{
+    color:var(--green);
+    font-size: 1.8rem;
+    margin-bottom: .8em;
+}
+
+.starters{
+    grid-row:span 2;
+}
+.menu tr{
+    display: flex;
+    justify-content: center;
+    margin-top:.8em;
+}
+
+.menu td:nth-child(1){
+    flex:1;
+    justify-self: end;
+}
+
+.menu td:nth-child(2){
+    justify-self: right;
+}
+
+footer{
+    padding: .25em 1em;
+    background-color: rgb(48, 42, 42);
+    color: var(--whitesmoke);
+    text-align: center;
+}
+
+
+@media  all and (width:320px){
+
+    .maintext{
+        padding:2em;
+    }
+    .maintext div{
+        font-size: 1.2em;
+        margin-bottom:10px;
+    }
+
+    .maintext button{
+        font-size: .9em;
+        width: 150px;
+        padding: 5px;
+        margin-bottom:10px;
+    }
+}
